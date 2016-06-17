@@ -3,7 +3,7 @@ import NavigationRoot from '../components/NavRoot'
 import { push, pop } from '../actions/navActions'
 function mapStateToProps (state) {
   return {
-    navigation: state.navigation
+    navigation: state.navReducer
   }
 }
 export default connect(
