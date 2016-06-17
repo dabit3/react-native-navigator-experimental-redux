@@ -30,6 +30,7 @@ function navigationState (state = initialState, action) {
   }
 }
 
+// You can also manually create your reducer::
 // export default (state = initialState, action) => {
 //   const {
 //     index,
