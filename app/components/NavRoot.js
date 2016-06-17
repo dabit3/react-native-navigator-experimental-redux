@@ -11,7 +11,7 @@ const {
   CardStack: NavigationCardStack
 } = NavigationExperimental
 
-class NavigationRoot extends Component {
+class NavRoot extends Component {
   constructor (props) {
     super(props)
     this._renderScene = this._renderScene.bind(this)
@@ -55,7 +55,6 @@ class NavigationRoot extends Component {
   render () {
     return (
       <NavigationCardStack
-        direction='vertical'
         navigationState={this.props.navigation}
         onNavigate={this._handleNavigate.bind(this)}
         renderScene={this._renderScene} />
@@ -63,4 +62,4 @@ class NavigationRoot extends Component {
   }
 }
 
-export default NavigationRoot
+export default NavRoot
