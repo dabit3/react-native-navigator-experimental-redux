@@ -6,6 +6,7 @@ function mapStateToProps (state) {
     navigation: state.navReducer
   }
 }
+
 export default connect(
   mapStateToProps,
   {
@@ -13,3 +14,10 @@ export default connect(
     popRoute: () => (pop())
   }
 )(NavigationRoot)
+
+// function mapDispatchToProps (dispatch) {
+//   return {
+//     pushRoute: (route) => dispatch(push(route)),
+//     popRoute: () => dispatch(pop())
+//   }
+// }
