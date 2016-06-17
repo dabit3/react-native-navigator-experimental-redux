@@ -6,25 +6,20 @@ import {
 } from 'react-native'
 import Button from './Button'
 
-class Home extends Component {
-  navigate () {
-    this.props._handleNavigate({
-      type: 'push',
-      route: {
-        key: 'about',
-        title: 'About'
-      }
-    })
-  }
-  render () {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.title}>Home</Text>
-        <Button onPress={this.navigate.bind(this)} label='Go To About' />
-      </View>
-    )
+const route = {
+  type: 'push',
+  route: {
+    key: 'about',
+    title: 'About'
   }
 }
+
+const Home = ({_handleNavigate}) => (
+  <View style={styles.container}>
+    <Text style={styles.title}>Home</Text>
+    <Button onPress={() => _handleNavigate(route)} label='Go To About' />
+  </View>
+)
 
 const styles = StyleSheet.create({
   title: {

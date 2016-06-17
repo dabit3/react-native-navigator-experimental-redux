@@ -6,16 +6,12 @@ import {
 } from 'react-native'
 import Button from './Button'
 
-class Home extends Component {
-  render () {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.title}>About</Text>
-        <Button onPress={() => this.props._goBack()} label='Go Back' />
-      </View>
-    )
-  }
-}
+const About = ({_goBack}) => (
+  <View style={styles.container}>
+    <Text style={styles.title}>About</Text>
+    <Button onPress={_goBack} label='Go Back' />
+  </View>
+)
 
 const styles = StyleSheet.create({
   title: {
@@ -28,4 +24,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Home
+export default About
