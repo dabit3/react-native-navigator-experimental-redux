@@ -10,8 +10,8 @@ function mapStateToProps (state) {
 export default connect(
   mapStateToProps,
   {
-    pushRoute: (route) => (push(route)),
-    popRoute: () => (pop())
+    pushRoute: (route) => push(route),
+    popRoute: () => pop()
   }
 )(NavigationRoot)
 
