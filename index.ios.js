@@ -5,7 +5,7 @@ import configureStore from './app/store/configureStore'
 const store = configureStore()
 
 // import NavigationRootContainer from './app/containers/navRootContainer'
-import TabsRootContainer from './app/containers/TabsRootContainer'
+import TabsRootContainer from './app/containers/tabsRootContainer'
 import { Provider } from 'react-redux'
 
 const App = () => (
