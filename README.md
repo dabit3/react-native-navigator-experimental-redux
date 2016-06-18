@@ -25,3 +25,11 @@ npm install
 ```
 
 4 Run the project in either an Android or iOS environment.
+
+---
+
+To see Tabs implemented into this implementation along with a custom reducer, view (this)[https://github.com/dabit3/react-native-navigator-experimental-redux/tree/part3-tabs] branch.
+
+To see Tabs implemented into this implementation along with a NavigationExperimental reducer, view (this)[https://github.com/dabit3/react-native-navigator-experimental-redux/tree/part3-tabs-part2] branch.
+
+
