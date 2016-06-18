@@ -8,6 +8,7 @@ import {
 } from 'react-native'
 
 const {
+  Reducer: NavigationTabsReducer,
   CardStack: NavigationCardStack
 } = NavigationExperimental
 
@@ -55,6 +56,7 @@ class NavRoot extends Component {
   render () {
     return (
       <NavigationCardStack
+        style={{flex: 1}}
         navigationState={this.props.navigation}
         onNavigate={this._handleNavigate.bind(this)}
         renderScene={this._renderScene} />
