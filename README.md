@@ -28,8 +28,8 @@ npm install
 
 ---
 
-To see Tabs implemented into this implementation along with a custom reducer, view [this](https://github.com/dabit3/react-native-navigator-experimental-redux/tree/part3-tabs) branch.
+To see Tabs implemented into this project along with a custom reducer, view [this](https://github.com/dabit3/react-native-navigator-experimental-redux/tree/part3-tabs) branch.
 
-To see Tabs implemented into this implementation along with a NavigationExperimental reducer, view [this](https://github.com/dabit3/react-native-navigator-experimental-redux/tree/part3-tabs-part2) branch.
+To see Tabs implemented into this project along with a NavigationExperimental reducer, view [this](https://github.com/dabit3/react-native-navigator-experimental-redux/tree/part3-tabs-part2) branch.
 
 
