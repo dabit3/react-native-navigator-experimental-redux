@@ -28,4 +28,10 @@ cd react-native-navigator-experimental-redux
 npm install
 ```
 
-4 Run the project in either an Android or iOS environment.
+4 Check out this branch:
+
+```
+git checkout part3-tabs
+```
+
+5 Run the project in either an Android or iOS environment.
