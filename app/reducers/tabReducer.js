@@ -1,8 +1,8 @@
-import { NavigationExperimental } from 'react-native'
+// import { NavigationExperimental } from 'react-native'
 import { CHANGE_TAB } from '../constants/ActionTypes'
-const {
- Reducer: NavigationReducer
-} = NavigationExperimental
+// const {
+//  Reducer: NavigationReducer
+// } = NavigationExperimental
 
 const homeIcon = {
   scale: 2.3,
@@ -23,13 +23,13 @@ const tabs = [
   { key: 'samples', icon: sampleIcon, title: 'Samples' }
 ]
 
-const tabState = {
+const initialState = {
   index: 0,
-  initialIndex: 'home',
   routes: tabs
 }
 
-function tabsNav (state = tabState, action) {
+function tabsNav (state = initialState, action) {
+  if (action.index === state.index) return state
   switch (action.type) {
     case CHANGE_TAB:
       return {

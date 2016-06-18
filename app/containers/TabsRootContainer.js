@@ -8,26 +8,26 @@ function mapStateToProps (state) {
   }
 }
 
-function mapDispatchToProps (dispatch) {
-  return {
-    changeTab: (route) => dispatch(changeTab(route))
-  }
-}
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  {
+    changeTab: (route) => changeTab(route)
+  }
 )(TabsRoot)
+
+// function mapDispatchToProps (dispatch) {
+//   return {
+//     changeTab: (route) => dispatch(changeTab(route))
+//   }
+// }
+
+// export default connect(
+//   mapStateToProps,
+//   mapDispatchToProps
+// )(TabsRoot)
 
 // function mapDispatchToProps (dispatch) {
 //   return {
 //     dispatch
 //   }
 // }
-
-// export default connect(
-//   mapStateToProps,
-//   {
-//     changeTab: (route) => changeTab(route)
-//   }
-// )(TabsRoot)
