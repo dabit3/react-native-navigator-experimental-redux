@@ -1,18 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { View, Text, StyleSheet, Image } from 'react-native'
 
-class Recipes extends Component {
-  render () {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.text}>Hello from Recipes!</Text>
-        <Image
-          style={styles.image}
-          source={{ uri: 'https://i.imgur.com/zwx84jE.png' }}/>
-      </View>
-    )
-  }
-}
+const Recipes = () => (
+  <View style={styles.container}>
+    <Text style={styles.text}>Hello from Recipes!</Text>
+    <Image
+      style={styles.image}
+      source={{ uri: 'https://i.imgur.com/zwx84jE.png' }}/>
+  </View>
+)
 
 const styles = StyleSheet.create({
   container: {
@@ -28,8 +24,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 250,
-    height: 250,
-    backgroundColor: 'transparent',
+    height: 250
   }
 })
 
