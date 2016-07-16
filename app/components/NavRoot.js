@@ -25,12 +25,11 @@ class NavRoot extends Component {
     BackAndroid.removeEventListener('hardwareBackPress', this._handleBackAction)
   }
   _renderScene (props) {
-    const prefix = 'scene_'
-    const { scene } = props
-    if (scene.key === prefix + 'home') {
+    const { route } = props.scene
+    if (route.key ===  'home') {
       return <Home _handleNavigate={this._handleNavigate.bind(this)} />
     }
-    if (scene.key === prefix + 'about') {
+    if (route.key === 'about') {
       return <About _goBack={this._handleBackAction.bind(this)} />
     }
   }
